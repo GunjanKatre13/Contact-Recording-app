@@ -1,0 +1,39 @@
+<div class="container">
+  <h2 class="ms-2">Contact List</h2>
+
+
+  <div class="container row my-3">
+  <div class="col d-flex justify-content-start">
+    <button (click)="deleteAllContacts()" class="btn btn-danger me-4">Delete All Contacts</button>
+    <button (click)="addContact()" class="btn btn-primary">Add Contact</button>
+  </div>
+
+  <div class="col d-flex justify-content-end">
+    <button (click)="profile()" class="btn btn-primary me-2">Profile</button> 
+    <button class="btn btn-danger" (click)="logout()">Logout</button>
+  </div>
+  </div>
+
+  <table class="table mt-2">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.phoneNumber }}</td>
+        <td>
+          <button (click)="updateContact(contact.id!)" class="btn btn-warning me-3">Update</button>
+<button (click)="deleteContact(contact.id!)" class="btn btn-danger">Delete</button>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

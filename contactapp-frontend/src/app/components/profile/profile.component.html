@@ -1,0 +1,15 @@
+<div class="profile-container">
+    <h2>User Profile</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <label for="username">Username:</label>
+      <input id="username" type="text" formControlName="username" readonly />
+  
+      <label for="name">Full Name:</label>
+      <input id="name" type="text" formControlName="name" />
+  
+      <label for="password">New Password:</label>
+      <input id="password" type="password" formControlName="password" />
+  
+      <button type="submit">Update Profile</button>
+    </form>
+</div>  

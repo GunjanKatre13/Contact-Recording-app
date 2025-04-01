@@ -1,0 +1,12 @@
+<div class="form-container">
+    <div class="form-card">
+      <h2>Update Contact</h2>
+      <form (submit)="updateContact()">
+        <input type="text" class="form-input" placeholder="Full Name" [(ngModel)]="contact.name" name="name" required>
+        <input type="email" class="form-input" placeholder="Email" [(ngModel)]="contact.email" name="email" required>
+        <input type="text" class="form-input" placeholder="Phone Number" [(ngModel)]="contact.phoneNumber" name="phone" required>
+        <button type="submit" class="form-button">Update Contact</button>
+      </form>
+    </div>
+  </div>
+  

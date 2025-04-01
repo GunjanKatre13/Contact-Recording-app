@@ -1,0 +1,11 @@
+<div class="form-container">
+  <div class="form-card">
+    <h2>Add Contact</h2>
+    <form (submit)="addContact()">
+      <input type="text" class="form-input" placeholder="Full Name" [(ngModel)]="newContact.name" name="name" required>
+      <input type="email" class="form-input" placeholder="Email" [(ngModel)]="newContact.email" name="email" required>
+      <input type="text" class="form-input" placeholder="Phone Number" [(ngModel)]="newContact.phoneNumber" name="phone" required>
+      <button type="submit" class="form-button">Add Contact</button>
+    </form>
+  </div>
+</div>

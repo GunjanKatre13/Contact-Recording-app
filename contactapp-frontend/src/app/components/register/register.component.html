@@ -1,0 +1,11 @@
+<div class="form-container">
+  <div class="form-card">
+    <h2>Register</h2>
+    <form (submit)="register()">
+      <input type="text" class="form-input" placeholder="Full Name" [(ngModel)]="username" name="name" required>
+      <input type="email" class="form-input" placeholder="Email" [(ngModel)]="email" name="email" required>
+      <input type="password" class="form-input" placeholder="Password" [(ngModel)]="password" name="password" required>
+      <button type="submit" class="form-button">Register</button>
+    </form>
+  </div>
+</div>

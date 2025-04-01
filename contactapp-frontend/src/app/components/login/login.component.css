@@ -1,0 +1,19 @@
+.register-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-container p {
+  font-size: 14px;
+  color: #333;
+}
+
+.register-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
